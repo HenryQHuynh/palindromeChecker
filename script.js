@@ -3,6 +3,20 @@ const button = document.querySelector("#btn");
 const inputText = document.querySelector("#input-text");
 const result = document.querySelector("#result");
 
+const music = document.querySelector("#music");
+const playButton = document.querySelector("#playButton");
+
+playButton.addEventListener("click", () => {
+   if (music.paused) {
+      music.play();
+      playButton.classList.remove("play");
+   } else {
+      music.pause();
+      playButton.classList.add("play");
+   }
+});
+
+
 // Adding Event Listener to Button
 button.addEventListener("click", () => {
    // Input value and trim empty spaces

@@ -16,6 +16,7 @@ playButton.addEventListener("click", () => {
    }
 });
 
+music.volume = 0.4;
 
 // Adding Event Listener to Button
 button.addEventListener("click", () => {
